@@ -1,0 +1,62 @@
+*,
+body {
+    margin: 0;
+}
+
+label[for="toggle"] {
+    font-size: 7em;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    z-index: 1;
+    color: wheat;
+    font-weight: 600;
+    /*   border:2px solid ; */
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    right: 0;
+    top: -70px;
+}
+
+/* Styling Aside Content */
+aside.aside_content {
+    position: fixed;
+    right: -335px;
+    top: 0px;
+    background: red;
+    padding: 30px 60px;
+    height: 100%;
+    transition: 0.6s all;
+}
+
+div.sidebar ol {
+    /*   padding-left:0;   */
+    padding-inline-start: 0;
+}
+
+div.sidebar ol li {
+    line-height: 1.7;
+    padding: 8px 0;
+    font-size: 1.5em;
+}
+
+div.sidebar h2 {
+    font-size: 2.5em;
+    color: wheat;
+}
+
+/* linking sidebar with checkbox ☑ */
+
+input[type="checkbox"]:checked+aside {
+    right: 6px;
+}
+
+
+
+/* extraspacwe */
+div.extra_space {
+    height: 4000px;
+}
